@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import ThemeContext from "./Context/ThemeContext";
+import Hero from "./Hero";
 
 export default class Home extends Component {
   static contextType = ThemeContext;
@@ -10,11 +11,12 @@ export default class Home extends Component {
 
     return (
       <div
-        className={`d-flex align-items-center  ${
+        className={`${
           theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
         }`}
       >
         <Header />
+        <Hero />
       </div>
     );
   }

@@ -27,13 +27,13 @@ export default class Header extends Component {
 
     return (
       <header
-        className={`navbar navbar-expand shadow  ${
+        className={`navbar navbar-expand shadow fixed  ${
           theme === "light"
             ? "navbar-light bg-light text-dark"
             : "navbar-dark bg-dark text-light"
         }`}
       >
-        <div className="container">
+        <div className="container ">
           <div className="d-flex w-100 align-items-center justify-content-between">
             <a href="/" className="navbar-brand">
               Kevin Bennet
